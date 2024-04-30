@@ -1,9 +1,21 @@
 function fibonacci(n) {
-    if (n <= 1) {
+    if (n === 1) 
+	{
         return 0; 
-    } else if (n === 2) {
-        return 1; 
-    } else {
-        return fibonacci(n - 1) + fibonacci(n - 2);
-    }
+    } 
+		else if (n === 2 ) 
+	{
+		return 1;
+	} else{
+		let a = 0;
+		let b = 1;
+		for (let i = 3; i < n; i++)
+		{
+			
+			let sum  = a + b;
+			a = b
+			b = sum;
+		}	
+		return  b;
+	}
 }
