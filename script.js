@@ -19,3 +19,5 @@ function fibonacci(n) {
 		return  b;
 	}
 }
+
+module.exports = fibonacci;
