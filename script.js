@@ -9,7 +9,7 @@ function fibonacci(n) {
 	} else{
 		let a = 0;
 		let b = 1;
-		for (let i = 3; i < n; i++)
+		for (let i = 3; i <=n; i++)
 		{
 			
 			let sum  = a + b;
